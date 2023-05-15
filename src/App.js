@@ -5,11 +5,11 @@ import { useState } from 'react';
 function App() {
   const [inputValue, setInputValue] = useState('');
   const [message, setMessage] = useState('');
-  console.log(message)
+  
 
   const handleInputChange = (e) => {
     const value = e.target.value;
-    console.log(value + '--value')
+   
     setInputValue(value);
    if(value === ''){
       setMessage('')
